@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D3238"
+    tools:context="com.college.collegeAttendancemanagement.ScannerBeaconActivity" >
+
+    <LinearLayout
+        android:id="@+id/beacon_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/roundcorner"
+        android:orientation="vertical" >
+
+        <com.college.virtualattendancesystem.utilities.BeaconScannerView
+            android:id="@+id/scanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/beacon_layout"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="vertical"
+        android:paddingTop="30dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are not in class Room!"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:src="@drawable/fingureprint" />
+
+    </LinearLayout>
+
+</RelativeLayout>
